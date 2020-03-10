@@ -1,0 +1,27 @@
+Package: IETD
+Type: Package
+Title: Inter-Event Time Definition
+Version: 1.0.0
+Author: Luis F. Duque <lfduquey@gmail.com>
+Maintainer: Luis F. Duque <lfduquey@gmail.com>
+Description: Computes characteristics of independent rainfall events (duration, total rainfall depth, and intensity) 
+  extracted from a sub-daily rainfall time series based on the inter-event time definition (IETD) method. To have a 
+  reference value of IETD, it also analyzes/computes IETD values through three methods: autocorrelation analysis, the 
+  average annual number of events analysis, and coefficient of variation analysis. Ideal for analyzing the sensitivity 
+  of IETD to characteristics of independent rainfall events.
+  Adams B, Papa F (2000) <ISBN: 978-0-471-33217-6>.
+  Joo J et al. (2014) <doi:10.3390/w6010045>.
+  Restrepo-Posada P, Eagleson P (1982) <doi:10.1016/0022-1694(82)90136-6>.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+        Rdpack,foreach,parallel,doParallel,ggplot2,dplyr,lubridate,stats
+RdMacros: Rdpack
+Depends: R (>= 2.10)
+RoxygenNote: 7.0.2
+Suggests: testthat
+NeedsCompilation: no
+Packaged: 2020-03-03 09:21:37 UTC; ASUS
+Repository: CRAN
+Date/Publication: 2020-03-10 08:50:06 UTC
